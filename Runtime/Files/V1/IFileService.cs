@@ -1,7 +1,6 @@
-using SharedServices;
 using SharedServices.V1;
 
-namespace Services.Files
+namespace SharedServices.Files.V1
 {
     public interface IFileService : IService
     {

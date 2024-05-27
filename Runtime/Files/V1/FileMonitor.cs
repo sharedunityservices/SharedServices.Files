@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using UnityEngine;
 
-namespace Services.Files
+namespace SharedServices.Files.V1
 {
     public class FileMonitor
     {

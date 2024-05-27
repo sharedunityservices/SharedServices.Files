@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Services.Files
+namespace SharedServices.Files.V1
 {
     public class FileMonitorMonoBehaviour : MonoBehaviour
     {
