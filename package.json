@@ -1,0 +1,15 @@
+{
+  "name": "com.sharedunityservices.files",
+  "displayName": "SharedServices.Files",
+  "version": "1.0.0",
+  "description": "<b>Dependencies:</b> https://github.com/sharedunityservices/SharedServices..Core.git\n\n<b>SharedServices.Files</b> is a package that provides a set of tools to work with files and directories.",
+  "unity": "2020.1",
+  "author": {
+    "name": "ETdoFresh",
+    "email": "etdofresh@gmail.com",
+    "url": "https://github.com/sharedunityservices"
+  },
+  "dependencies": {
+    "com.sharedunityservices.core": "1.0.0"
+  }
+}
