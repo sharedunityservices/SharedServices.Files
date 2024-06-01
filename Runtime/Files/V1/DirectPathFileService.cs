@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace SharedServices.Files.V1
 {
-    public class FileService : IFileService
+    public class DirectPathFileService : IFileService
     {
         private static FileMonitorMonoBehaviour _fileMonitorMonoBehaviour;
 
