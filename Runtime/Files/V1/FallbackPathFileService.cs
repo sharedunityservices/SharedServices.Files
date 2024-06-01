@@ -72,6 +72,8 @@ namespace SharedServices.Files.V1
                 return textResource.text;
             }
             
+            // Try to remove ext and try again from resources.
+            
             return null;
         }
     }
