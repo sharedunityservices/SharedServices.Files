@@ -72,7 +72,12 @@ namespace SharedServices.Files.V1
                 return textResource.text;
             }
             
-            // Try to remove ext and try again from resources.
+            var pathWithoutExt = Path.ChangeExtension(path, null);
+            textResource = Resources.Load<TextAsset>(pathWithoutExt);
+            if (textResource)
+            {
+                return textResource.text;
+            }
             
             return null;
         }
