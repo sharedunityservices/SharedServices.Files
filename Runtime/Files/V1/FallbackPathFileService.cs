@@ -6,12 +6,6 @@ namespace SharedServices.Files.V1
     public class FallbackPathFileService : IFileService
     {
         private static FileMonitorMonoBehaviour _fileMonitorMonoBehaviour;
-
-        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
-        private static void Initialize()
-        {
-            _fileMonitorMonoBehaviour = GameObjectUtil.CreateDDOLWith<FileMonitorMonoBehaviour>("FileService");
-        }
         
         public string ReadAllText(string path)
         {
