@@ -1,4 +1,5 @@
 using System.IO;
+using SharedServices.Json.V1;
 using UnityEngine;
 
 namespace SharedServices.Files.V1
@@ -38,14 +39,14 @@ namespace SharedServices.Files.V1
         public T ReadJson<T>(string path)
         {
             var json = ReadAllText(path);
-            return JsonUtil.FromJson<T>(json);
+            return IJsonService.FromJson<T>(json);
         }
         
         public void WriteJson<T>(string path, T obj)
         {
             var persistentDataPath = Application.persistentDataPath;
             path = Path.Combine(persistentDataPath, path);
-            var json = JsonUtil.ToJson(obj);
+            var json = IJsonService.ToJson(obj);
             WriteAllText(path, json);
         }
         

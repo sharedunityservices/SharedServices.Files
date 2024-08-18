@@ -1,4 +1,5 @@
 using System.IO;
+using SharedServices.Json.V1;
 using UnityEngine;
 
 namespace SharedServices.Files.V1
@@ -39,7 +40,7 @@ namespace SharedServices.Files.V1
         public T ReadJson<T>(string path)
         {
             var json = ReadAllText(path);
-            return JsonUtil.FromJson<T>(json);
+            return IJsonService.FromJson<T>(json);
         }
     }
 }
