@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace SharedServices.Files.V1
 {
+    [UnityEngine.Scripting.Preserve]
     public class FallbackPathFileService : IFileService
     {
         private static FileMonitorMonoBehaviour _fileMonitorMonoBehaviour;
